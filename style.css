@@ -36,6 +36,7 @@ body {
   font-weight: 700;
   margin: 0 0 8px 0;
   padding: 5px 0;
+  line-height: 2.5rem;
 }
 .first-header {
   color: hsl(179, 62%, 43%);
