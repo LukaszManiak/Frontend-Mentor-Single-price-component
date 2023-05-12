@@ -1,9 +1,16 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --blue: hsl(179, 62%, 43%);
+  --green: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --light-blue: hsl(179, 60%, 49%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
   font-family: "Karla";
@@ -26,7 +33,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .first-section {
-  background-color: white;
+  background-color: var(--white);
   padding: 10px 30px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -39,10 +46,10 @@ body {
   line-height: 2.5rem;
 }
 .first-header {
-  color: hsl(179, 62%, 43%);
+  color: var(--blue);
 }
 .first-small-header {
-  color: hsl(71, 73%, 54%);
+  color: var(--green);
   font-weight: 700;
   font-size: 1.8rem;
   margin-bottom: 15px;
@@ -56,10 +63,10 @@ body {
 }
 
 .second-section {
-  background-color: hsl(179, 62%, 43%);
+  background-color: var(--blue);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  color: white;
+  color: var(--white);
   line-height: 1.5rem;
   display: flex;
   flex-direction: row;
@@ -72,16 +79,16 @@ body {
   padding: 12px 0px;
   border: none;
   border-radius: 8px;
-  background-color: hsl(71, 73%, 54%);
-  color: white;
+  background-color: var(--green);
+  color: var(--white);
   box-shadow: 0px 10px 25px -2px rgba(152, 166, 189, 1);
   margin: 10px 0;
   cursor: pointer;
   transition: background-color 0.15s, color 0.15s;
 }
 .sing-up-btn:hover {
-  background-color: white;
-  color: hsl(179, 62%, 43%);
+  background-color: var(--white);
+  color: var(--blue);
 }
 
 .price-tag {
@@ -101,7 +108,7 @@ body {
 }
 .second-section-bottom-container {
   border-top: solid 2px rgba(0, 0, 0, 0.082);
-  background-color: hsl(179, 60%, 49%);
+  background-color: var(--light-blue);
   padding: 10px 30px 20px 30px;
   width: 50%;
   border-top: none;
@@ -123,13 +130,13 @@ ul {
   position: absolute;
   font-size: 2.2rem;
   font-weight: 700;
-  color: hsl(179, 62%, 43%);
+  color: var(--blue);
   max-width: 90%;
 }
 
 .attribution a {
   text-decoration: none;
-  color: hsl(71, 73%, 54%);
+  color: var(--green);
 }
 .attribution a:hover {
   text-decoration: underline;
